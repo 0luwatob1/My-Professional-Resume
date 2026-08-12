@@ -17,7 +17,7 @@ jobs:
               uses: aquasecurity/trivy-action@v0.36.0
               with:
                 scan-type: 'fs'
-                severity: HIGH, CRITICAL
+                severity: HIGH,CRITICAL
                 exit-code: 1
             - name: Build Docker Image
               run: docker build -t 752697492485.dkr.ecr.us-east-1.amazonaws.com/my-repo:latest .
