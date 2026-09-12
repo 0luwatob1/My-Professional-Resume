@@ -8,8 +8,8 @@ jobs:
     build:
         runs-on: ubuntu-latest # macos, windows-latest
         steps:
-            - name: Clone the code
-              uses: action/checkout@v4
+            - name: Checkout the code
+              uses: actions/checkout@v4
             - name: Build image
               run:
                 docker build -t oluwatobiyh2/cicd-portfollio .
